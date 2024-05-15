@@ -2,4 +2,4 @@
     o_orderkey,
     o_custkey,
     o_totalprice
-    from snowflake_sample_data.tpch_sf1.orders
+    from {{ source('snow_sample_data', 'orders') }}

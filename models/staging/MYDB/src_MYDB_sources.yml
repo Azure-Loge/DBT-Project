@@ -1,0 +1,19 @@
+version: 2
+sources:
+  - name: snow_sample_data
+    database: snowflake_sample_data
+    schema: tpch_sf1
+    tables:
+      - name: customer
+        columns:
+        - name: c_custkey
+          tests:
+            - unique
+            - not_null
+      - name: orders
+
+  - name: MYDB_sample_data
+    database: MYDB
+    schema: public
+    tables:
+      - name: loan_payment
