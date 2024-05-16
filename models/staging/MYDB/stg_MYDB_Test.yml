@@ -2,14 +2,18 @@ version: 2
 
 models:
   - name: stg_customer
+    description: one unique customer per row
     columns:
       - name: c_custkey
+        description: primery key
         tests:
           - unique
           - not_null
   - name: stg_Orders
+    description: one order per row
     columns:
       - name: o_orderkey
+        description: primery key
         tests:
           - not_null
             
