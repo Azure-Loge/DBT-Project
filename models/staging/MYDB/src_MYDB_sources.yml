@@ -1,19 +1,24 @@
 version: 2
 sources:
   - name: snow_sample_data
+    description: a clon of postgres application database
     database: snowflake_sample_data
     schema: tpch_sf1
     tables:
       - name: customer
+        description: row customer data
         columns:
         - name: c_custkey
           tests:
             - unique
             - not_null
       - name: orders
+        description: raw orders data
 
   - name: MYDB_sample_data
+    description: a clone of postgrse application database
     database: MYDB
     schema: public
     tables:
       - name: loan_payment
+        description: raw loan payment data
