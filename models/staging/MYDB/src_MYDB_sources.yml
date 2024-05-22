@@ -22,3 +22,15 @@ sources:
     tables:
       - name: loan_payment
         description: raw loan payment data
+
+  - name: RAW_Database
+    database: RAW
+    schema: jaffle_shop
+    tables:
+      - name: orders
+
+  - name: RAW_Database_strips
+    database: RAW
+    schema: stripe
+    tables:
+      - name: payment
